@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #9EC050;
+  text-decoration: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1700px;
+  }
+}
+/*# sourceMappingURL=reset.css.map */

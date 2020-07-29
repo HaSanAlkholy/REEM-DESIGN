@@ -321,7 +321,7 @@ header .control form.show input {
 
 @media (max-width: 576px) {
   header .control form.show input {
-    width: 100px;
+    width: 100%;
   }
 }
 
@@ -784,8 +784,9 @@ main #services .services-body .service {
 
 @media (max-width: 768px) {
   main #services .services-body .service {
-    height: 175px;
-    width: 175px;
+    height: 150px;
+    width: 150px;
+    padding: 0rem 5px;
   }
 }
 
@@ -873,7 +874,6 @@ main #work .work-body .row {
   padding: 0;
   flex-wrap: nowrap;
   width: 90%;
-  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -887,6 +887,7 @@ main #work .work-body .row {
 main #work .work-body .row .project {
   text-align: center;
   position: relative;
+  margin-bottom: 10px;
 }
 
 main #work .work-body .row .project img {
@@ -1009,12 +1010,6 @@ main #contact .contact-map .map-container-3 {
   min-height: 350px;
 }
 
-@media (max-width: 1400px) {
-  main #contact .contact-map .map-container-3 {
-    min-height: 300px;
-  }
-}
-
 main #contact .contact-map .map-container-3 iframe {
   left: 0;
   top: 0;
@@ -1097,6 +1092,17 @@ main #contact .contact-form form label {
   main #contact .contact-form form label {
     font-size: 20px;
   }
+}
+
+main #contact .contact-form form .send {
+  background-color: #9ec050;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0.4rem 2rem;
 }
 
 footer {
