@@ -9,6 +9,10 @@ $color1:#9EC050;
   font-family: 'Open Sans', sans-serif;
 }
 
+*:focus{
+  outline:none;
+}
+
 a {
   color: white;
 
@@ -30,13 +34,6 @@ ul {
 
 
 .container {  
-  // @media (min-width: 767px) {
-  //   max-width: 850px;
-  // }
-  
-  // @media (min-width: 1200px) {
-  //   max-width: 1275px;
-  // }
   @media (min-width: 1500px) {
     max-width: 1700px;
   }

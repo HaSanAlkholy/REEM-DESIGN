@@ -7,6 +7,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+*:focus {
+  outline: none;
+}
+
 a {
   color: white;
 }
@@ -48,12 +52,6 @@ header .container {
   position: relative;
 }
 
-@media (max-width: 992px) {
-  header .container {
-    justify-content: center;
-  }
-}
-
 @media (max-width: 576px) {
   header .container {
     align-items: flex-end;
@@ -92,28 +90,24 @@ header .logo {
 }
 
 header .logo img {
-  height: 100px;
   width: 125px;
 }
 
 @media (max-width: 1400px) {
   header .logo img {
-    height: 75px;
     width: 100px;
   }
 }
 
 @media (max-width: 576px) {
   header .logo img {
-    height: 60px;
     width: 75px;
   }
 }
 
 @media (max-width: 400px) {
   header .logo img {
-    height: 50px;
-    width: 65px;
+    width: 75px;
   }
 }
 
@@ -129,6 +123,7 @@ header .navbar .dropdown-menu {
 
 header .navbar .dropdown-menu a {
   color: #656565;
+  padding-left: 10px;
 }
 
 header .navbar .dropdown-menu a:hover, header .navbar .dropdown-menu a:focus, header .navbar .dropdown-menu a:active {
@@ -177,6 +172,16 @@ header .social #sec-icon {
   }
 }
 
+header .social .social-icons {
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  header .social .social-icons {
+    display: none;
+  }
+}
+
 header .social .social-item a {
   color: #555555;
   transition: all 0.5s;
@@ -212,7 +217,11 @@ header #sec-items {
 
 header #sec-items ul {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+}
+
+header #sec-items ul .s {
+  display: flex;
 }
 
 header #sec-items li {
@@ -570,7 +579,7 @@ main #about {
 
 @media (max-width: 576px) {
   main #about {
-    padding: 75px 0;
+    padding: 30px 0;
   }
 }
 
@@ -698,8 +707,8 @@ main #services {
 
 @media (max-width: 576px) {
   main #services {
-    padding: 75px 0;
-    margin-top: 50px;
+    padding: 50px 0;
+    margin-top: 25px;
   }
 }
 
@@ -724,7 +733,7 @@ main #services .services-head h2 {
 
 @media (max-width: 400px) {
   main #services .services-head h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -748,7 +757,7 @@ main #services .services-head h3 {
 
 @media (max-width: 400px) {
   main #services .services-head h3 {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
@@ -826,6 +835,12 @@ main #work {
   margin-top: 150px;
 }
 
+@media (max-width: 576px) {
+  main #work {
+    margin-top: 50px;
+  }
+}
+
 main #work .work-head {
   text-align: center;
   color: white;
@@ -887,7 +902,13 @@ main #work .work-body .row {
 main #work .work-body .row .project {
   text-align: center;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 576px) {
+  main #work .work-body .row .project {
+    margin-bottom: 10px;
+  }
 }
 
 main #work .work-body .row .project img {
@@ -909,7 +930,6 @@ main #work .work-body .row .project img {
 
 @media (max-width: 768px) {
   main #work .work-body .row .project img {
-    margin-bottom: 10px;
     height: auto;
     min-height: 100%;
   }
@@ -995,6 +1015,7 @@ main #contact .row {
 @media (max-width: 768px) {
   main #contact .row {
     width: 100%;
+    flex-direction: column-reverse;
   }
 }
 
@@ -1004,10 +1025,9 @@ main #contact .contact-map {
 
 main #contact .contact-map .map-container-3 {
   overflow: hidden;
-  padding-bottom: 56.25%;
   position: relative;
   height: 100%;
-  min-height: 350px;
+  min-height: 300px;
 }
 
 main #contact .contact-map .map-container-3 iframe {
@@ -1023,12 +1043,7 @@ main #contact .contact-form {
   padding: 0;
   background-color: #282828;
   border-right: 5px solid #9ec050;
-}
-
-@media (max-width: 768px) {
-  main #contact .contact-form {
-    padding: 40px 0px;
-  }
+  padding: 40px 0px;
 }
 
 main #contact .contact-form form {
@@ -1149,6 +1164,8 @@ footer .btn {
   padding: 10px 15px;
   margin-left: 35px;
   border: none;
+  border-radius: 0;
+  background-color: #282828;
 }
 
 @media (max-width: 992px) {

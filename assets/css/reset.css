@@ -7,6 +7,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+*:focus {
+  outline: none;
+}
+
 a {
   color: white;
 }
