@@ -52,3 +52,6 @@ $('#sec-icon').click(function (e) {
 $('#sec-items').click(function (e) { 
   $('#sec-items').removeClass('show');
 });
+
+
+alert(window.innerWidth);
