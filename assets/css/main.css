@@ -1018,6 +1018,12 @@ main #contact {
   margin-top: 150px;
 }
 
+@media (max-width: 576px) {
+  main #contact {
+    margin-top: 50px;
+  }
+}
+
 main #contact #map {
   height: 100%;
 }
@@ -1139,6 +1145,12 @@ footer {
   color: #585858;
   background-color: #202020;
   margin-top: 100px;
+}
+
+@media (max-width: 576px) {
+  footer {
+    margin-top: 50px;
+  }
 }
 
 footer .row {

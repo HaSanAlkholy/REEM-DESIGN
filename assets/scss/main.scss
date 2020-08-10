@@ -83,7 +83,7 @@ header {
       }
     }
 
-    .show{
+    .show {
       opacity: 1;
       z-index: 10;
     }
@@ -780,8 +780,12 @@ main {
   #contact {
     margin-top: 150px;
 
-    #map{
-      height:100%;
+    @media (max-width: 576px) {
+      margin-top: 50px;
+    }
+
+    #map {
+      height: 100%;
     }
 
     .row {
@@ -887,6 +891,10 @@ footer {
   color: #585858;
   background-color: #202020;
   margin-top: 100px;
+
+  @media (max-width: 576px) {
+    margin-top: 50px;
+  }
 
   .row {
     align-items: center;
