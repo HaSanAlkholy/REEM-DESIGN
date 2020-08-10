@@ -1018,6 +1018,10 @@ main #contact {
   margin-top: 150px;
 }
 
+main #contact #map {
+  height: 100%;
+}
+
 main #contact .row {
   width: 90%;
 }
