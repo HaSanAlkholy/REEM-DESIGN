@@ -54,4 +54,3 @@ $('#sec-items').click(function (e) {
 });
 
 
-alert(window.innerWidth);

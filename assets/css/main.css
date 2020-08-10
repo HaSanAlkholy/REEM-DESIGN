@@ -45,6 +45,10 @@ html {
   background-color: #242424;
 }
 
+header {
+  padding: 10px 0;
+}
+
 header .container {
   display: flex;
   align-items: center;
@@ -119,6 +123,10 @@ header .logo img {
 
 header .navbar .dropdown-menu {
   background-color: #292929;
+  transition: all 0.5s;
+  display: block;
+  opacity: 0;
+  z-index: -1;
 }
 
 header .navbar .dropdown-menu a {
@@ -132,10 +140,15 @@ header .navbar .dropdown-menu a:hover, header .navbar .dropdown-menu a:focus, he
   background-color: transparent;
 }
 
+header .navbar .show {
+  opacity: 1;
+  z-index: 10;
+}
+
 header .navbar .nav-item {
   font-weight: 500;
   font-size: 18px;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 @media (max-width: 1400px) {
@@ -208,7 +221,7 @@ header #sec-items {
   height: 0;
   opacity: 0;
   transition: all 0.7s;
-  background-color: rgba(29, 29, 29, 0.7);
+  background-color: rgba(29, 29, 29, 0.9);
   z-index: 15;
   font-size: 1.5rem;
   color: white;
@@ -227,12 +240,12 @@ header #sec-items ul .s {
 header #sec-items li {
   text-align: center;
   margin: 20px;
+  font-size: 19px;
 }
 
 @media (max-width: 576px) {
   header #sec-items li {
     margin: 10px;
-    font-size: 13px;
   }
 }
 
@@ -540,36 +553,21 @@ main #slider-banner .swiper-container .swiper-slide .banner-text h2 {
   }
 }
 
-@media (max-width: 400px) {
-  main #slider-banner .swiper-container .swiper-slide .banner-text h2 {
-    font-size: 16px;
-  }
-}
-
 main #slider-banner .swiper-container .swiper-slide .banner-text h4 {
-  font-weight: 300;
-  margin-top: 25px;
-  width: 80%;
-}
-
-@media (max-width: 1600px) {
-  main #slider-banner .swiper-container .swiper-slide .banner-text h4 {
-    font-size: 17px;
-    margin-top: 15px;
-  }
+  font-weight: 200;
+  width: 85%;
+  font-size: 22px;
 }
 
 @media (max-width: 992px) {
   main #slider-banner .swiper-container .swiper-slide .banner-text h4 {
     font-size: 14px;
-    margin-top: 10px;
   }
 }
 
 @media (max-width: 768px) {
   main #slider-banner .swiper-container .swiper-slide .banner-text h4 {
-    margin-top: 5px;
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
@@ -658,7 +656,7 @@ main #about .about-head .text {
 @media (max-width: 992px) {
   main #about .about-head .text {
     width: 90%;
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -669,7 +667,7 @@ main #about .about-head .text img {
 
 @media (max-width: 1500px) {
   main #about .about-head .text img {
-    width: 35%;
+    width: 40%;
     margin-bottom: 10px;
   }
 }
@@ -733,7 +731,7 @@ main #services .services-head h2 {
 
 @media (max-width: 400px) {
   main #services .services-head h2 {
-    font-size: 20px;
+    font-size: 23px;
   }
 }
 
@@ -757,7 +755,7 @@ main #services .services-head h3 {
 
 @media (max-width: 400px) {
   main #services .services-head h3 {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 
@@ -823,7 +821,7 @@ main #services .services-body .service img {
 
 @media (max-width: 768px) {
   main #services .services-body .service h5 {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 
@@ -874,7 +872,7 @@ main #work .work-head h3 {
 
 @media (max-width: 768px) {
   main #work .work-head h3 {
-    font-size: 18px;
+    font-size: 23px;
   }
 }
 
@@ -961,9 +959,21 @@ main #work .work-body .row .project .project-body h4 {
   font-weight: 800;
 }
 
+@media (max-width: 576px) {
+  main #work .work-body .row .project .project-body h4 {
+    font-size: 20px;
+  }
+}
+
 main #work .work-body .row .project .project-body h5 {
   font-size: 16px;
   font-weight: 300;
+}
+
+@media (max-width: 576px) {
+  main #work .work-body .row .project .project-body h5 {
+    font-size: 14px;
+  }
 }
 
 main #work .work-body .row:nth-child(odd) > div:nth-child(1) {
